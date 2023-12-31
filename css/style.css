@@ -93,7 +93,7 @@ body{
     font-weight: 600;
     text-transform: capitalize;
     /* color: #000; */
-    background-color: rgb(246, 95, 30);
+    background-color: rgb(164 165 3);
     list-style-type: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -123,11 +123,28 @@ body{
     cursor: pointer;
 }
 #deleteIcon{
+    padding: 5px;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#deleteIcon:hover{
+    background-color: red !important;
 }
 .statusWaitting{
     display: none;
 }
 .statusCompleted{
     display: block;
+    text-decoration: line-through;
 }
